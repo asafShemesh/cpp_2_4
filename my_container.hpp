@@ -22,22 +22,6 @@ namespace ariel
     private:
         std::vector<T> data;
 
-        /**
-         * @brief Check if a number is prime.
-         *
-         * @param num Number to check.
-         * @return true if prime, false otherwise.
-         */
-        static bool is_prime(int num)
-        {
-            if (num < 2)
-                return false;
-            for (int i = 2; i <= std::sqrt(num); ++i)
-                if (num % i == 0)
-                    return false;
-            return true;
-        }
-
     public:
         /**
          * @brief Add an element to the container.
